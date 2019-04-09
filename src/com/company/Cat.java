@@ -7,17 +7,17 @@ public class Cat {
     private String breed;
     private String color;
     private double velosity =0;
+       
+    public Cat() {
 
+    }
+    
     public Cat(String name, String gender, int years, String breed, String color) {
         this.name = name;
         this.gender = gender;
         this.years = years;
         this.breed = breed;
         this.color = color;
-    }
-
-    public Cat() {
-
     }
 
     public String getName() {
