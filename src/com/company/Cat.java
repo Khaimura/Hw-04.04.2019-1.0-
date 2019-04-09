@@ -8,14 +8,6 @@ public class Cat {
     private String color;
     private double velosity =0;
 
-    void theVoiceOfTheCat(){
-        System.out.println("The Voice Of The Cat: Miaou-Miaou-Murrrr!!!");
-    }
-    void slepp(){
-        System.out.println("How to describe a dream :DD: brrrrr-brrrr-nyam-nyam");
-    }
-
-
     public Cat(String name, String gender, int years, String breed, String color) {
         this.name = name;
         this.gender = gender;
@@ -81,6 +73,12 @@ public class Cat {
     Cat setNewYears(Cat a,int newYears) {
         a.years = newYears;
         return a;
+    }
+     void theVoiceOfTheCat(){
+        System.out.println("The Voice Of The Cat: Miaou-Miaou-Murrrr!!!");
+    }
+    void slepp(){
+        System.out.println("How to describe a dream :DD: brrrrr-brrrr-nyam-nyam");
     }
 
 }
