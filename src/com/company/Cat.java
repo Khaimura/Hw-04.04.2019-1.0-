@@ -6,12 +6,20 @@ public class Cat {
     private int years;
     private String breed;
     private String color;
-    private double velosity =0;
-       
+    private double velosity = 0;
+
     public Cat() {
 
     }
-    
+
+    public void theVoiceOfTheCat() {
+        System.out.println("The Voice Of The Cat: Miaou-Miaou-Murrrr!!!");
+    }
+
+    public void slepp() {
+        System.out.println("How to describe a dream :DD: brrrrr-brrrr-nyam-nyam");
+    }
+
     public Cat(String name, String gender, int years, String breed, String color) {
         this.name = name;
         this.gender = gender;
@@ -19,6 +27,7 @@ public class Cat {
         this.breed = breed;
         this.color = color;
     }
+
 
     public String getName() {
         return name;
@@ -56,29 +65,17 @@ public class Cat {
         this.color = color;
     }
 
-   // public void setYears(int years) {
-   //     this.years = years;
-   // }
-    void print() {
-
-         System.out.println(
-                 "This is my Cat"+ '\n'+
-                 "Name= " + getName() + ";" + '\n' +
-                 "Gender= " + getGender() + ";" +'\n' +
-                 "Years= " + getYears() + ";" + '\n' +
-                 "Breed= " + getBreed() + ";" + '\n' +
-                 "Color= " + getColor() + ";" + '\n'
-                 );
-    }
-    Cat setNewYears(Cat a,int newYears) {
+    Cat setNewYears(Cat a, int newYears) {
         a.years = newYears;
         return a;
     }
-    void theVoiceOfTheCat(){
-        System.out.println("The Voice Of The Cat: Miaou-Miaou-Murrrr!!!");
-    }
-    void slepp(){
-        System.out.println("How to describe a dream :DD: brrrrr-brrrr-nyam-nyam");
-    }
 
+    public String toString() {
+        return "This is my Cat" + '\n' +
+                "Name= " + getName() + ";" + '\n' +
+                "Gender= " + getGender() + ";" + '\n' +
+                "Years= " + getYears() + ";" + '\n' +
+                "Breed= " + getBreed() + ";" + '\n' +
+                "Color= " + getColor() + ";" + '\n';
+    }
 }
